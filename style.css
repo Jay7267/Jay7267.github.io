@@ -1,0 +1,177 @@
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111927;
+    background-image: url("https://fotomelia.com/wp-content/uploads/2017/11/site-web-fotomelia-images-gratuites-19-1560x1041.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  
+  justify-content: center;
+  align-items: center;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom: auto;
+  
+  height: 60vh;
+  width: 60vh;
+
+  max-height: 80vh;
+  min-height: 50vh;
+
+  max-width: 40vw;
+  min-width: 40vh;
+}
+
+.top-bar {
+    grid-column: 1 / 9;
+    grid-row: 1 / 10;
+    width: 100%;
+    height: 100%;
+
+    border: 0.1vh solid rgba(255, 255, 255, 0.125);
+
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.75);
+
+
+    border-radius: 2.5vh;
+}
+
+.item-2 {
+
+    
+    background-color: rgba(255, 255, 255, 0);
+
+    grid-column: 1 / 9;
+    grid-row: 3 / 10;
+    width: 100%;
+    height: 100%;
+  
+    z-index: 1;
+    border-bottom-left-radius: 2.5vh;
+    border-bottom-right-radius: 2.5vh;
+}
+
+.pfp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-column: 4/6;
+    grid-row: 2/4;
+
+    width: 12vh;
+    height: 12vh;
+
+
+    margin: auto;
+
+    max-width: fit-content;
+    max-height: fit-content;
+
+    z-index: 2;
+  
+  
+    background: rgba(255, 255, 255, 0.125);
+
+    border-radius: 100%;
+    filter: drop-shadow(0px 0px 0.5vh rgba(255, 255, 255, 0.125));
+}
+
+
+.pfp-img {
+    width: 98%;
+    height: 98%;
+    border-radius: 100%;
+}
+
+.glowy {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.125);
+    height: 0.1vh;
+    box-shadow: 0px 0px 0.5vh 0px rgba(255, 255, 255, 0.125);
+}
+
+.inner-content {
+    grid-column: 1/9;
+    grid-row: 4/10;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    display: grid;   
+    align-items: center;    
+
+    height: 100%;
+    width: 100%;
+}
+
+.username {
+    margin-top: 7vh;
+    grid-column: 2/3;
+    color: white;
+    filter: drop-shadow(0px 0px 0.5vh rgba(239, 239, 239, 0.2));
+    text-align: center;
+    font-size: 3vh;
+    font-family: "Monaco", "Monaco", monospace;
+}
+
+.button-link {
+    grid-column: 2/3;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 2vh;
+    color: rgba(130, 130, 130, 1);
+    background-color: inherit;
+    
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1vh 1vh;
+    margin: 0vh 1vh;
+    margin-bottom: 0vh;
+    transition: 0.3s;
+}
+
+.button-link:hover {
+    font-size: 2.2vh;
+    color: rgb(225, 204, 204);
+    text-decoration-line: underline;
+    text-underline-offset: 1vh;
+}
+
+.media-links {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ion-icon {
+    color: rgba(239, 239, 239, 0.9);
+    font-size: 3vh;
+    transition: 0.5s;
+    margin: 0;
+}
+
+ion-icon:hover {
+    color: rgba(239, 239, 239, 0.9);
+    cursor: pointer;
+    font-size: 4vh;
+}
